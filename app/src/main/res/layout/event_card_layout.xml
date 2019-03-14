@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="25dp"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="174dp"
+    android:translationZ="70dp"
+    app:cardCornerRadius="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/event_pic"
+            android:layout_width="match_parent"
+            android:layout_height="218dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/dscbanner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/aref_ruqaa"
+                android:text="Google Cloud Study Jam"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_description"
+                android:layout_margin="10dp"
+                android:text="Google colludes with academy students🎓 who are enthusiastic about growing developer communities and supports them with commencing student clubs on their campuses. Developer Student Clubs is a program that recognizes and supports university students who are excited about growing developer communities that cultivate learning, sharing, and collaboration. " />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="2dp"
+                android:padding="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="140dp"
+                        android:id="@+id/event_Date"
+                        android:text="Date : 17 March 2019"/>
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/event_time"
+                        android:text="Time : 2 PM"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:text="Join Waiting List"
+                    android:id="@+id/event_status"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/aref_ruqaa"
+                    android:textStyle="bold"
+                    android:paddingTop="18dp"
+                    android:textSize="14dp"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="55dp"
+                    android:id="@+id/event_join_btn"
+                    android:layout_height="65dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/ic_notifications_black_24dp"
+                    app:backgroundTint="@color/colorPrimary" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
